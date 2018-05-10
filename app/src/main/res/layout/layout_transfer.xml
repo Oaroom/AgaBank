@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
+        android:textColor="#6997E0"
         android:text="계좌송금"
         android:textSize="15pt"/>
     <TextView
@@ -35,71 +36,121 @@
         />
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-
-    android:layout_marginTop="70dp"
-    android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal">
+        android:layout_height="200dp"
 
-        <Spinner
-            android:id="@+id/bankSpinner"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="입금은행" />
+
+            <Spinner
+
+                android:id="@+id/bankSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="받는분" />
+
+            <EditText
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@drawable/rounded"
+                android:contentDescription="이름" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_weight="4"
-            android:background="@drawable/rounded" />
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_weight="6"
-            android:background="@drawable/rounded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="계좌번호" />
+
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:contentDescription="계좌번호" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="소비분류" />
+
+            <Spinner
+                android:id="@+id/spendSpinner"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:text="금액"
+
+                />
+
+
+            <EditText
+                android:id="@+id/moneyTe"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="6"
+                android:background="@drawable/rounded" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/rounded"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spendSpinner"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="4"
-            android:background="@drawable/rounded" />
-
-        <EditText
-            android:id="@+id/moneyTe"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_weight="6"
-            android:background="@drawable/rounded" />
-
-    </LinearLayout>
-
-</LinearLayout>
 
     <Button
         android:id="@+id/button"

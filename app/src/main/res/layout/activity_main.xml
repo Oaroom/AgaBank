@@ -35,20 +35,19 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="39dp"
+                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="김오이"
-                android:textSize="100px" />
+                android:textSize="80px" />
 
             <TextView
                 android:id="@+id/name2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="39dp"
-                android:layout_right="@id/name1"
+                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:text="님,"
-                android:textSize="100px" />
+                android:textSize="80px" />
 
         </LinearLayout>
 
@@ -61,7 +60,7 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:text="안녕하세요."
-            android:textSize="100px" />
+            android:textSize="80px" />
 
 
         <TextView
@@ -71,13 +70,16 @@
             android:layout_below="@+id/imageView"
             android:layout_marginTop="0dp"
             android:text="현재 잔액  : "
-            android:textSize="50px" />
+            android:textSize="50px"
+            android:id="@+id/textView2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/welcome"
-            android:layout_below="@+id/imageView"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
             android:text="5,000,000원"
             android:textSize="50px" />
 
@@ -110,6 +112,7 @@
 
 
             <ImageButton
+                android:id="@+id/sendB"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="30dp"
@@ -117,6 +120,7 @@
                 android:background="@drawable/pay" />
 
             <ImageButton
+                android:id="@+id/showB"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
@@ -124,6 +128,7 @@
                 android:background="@drawable/book" />
 
             <ImageButton
+                android:id="@+id/analyzeB"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
