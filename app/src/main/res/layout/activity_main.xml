@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="190dp"
         android:background="#ffffff"
         android:orientation="vertical">
 
@@ -64,6 +64,24 @@
             android:textSize="100px" />
 
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/welcome"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="0dp"
+            android:text="현재 잔액  : "
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/welcome"
+            android:layout_below="@+id/imageView"
+            android:text="5,000,000원"
+            android:textSize="50px" />
+
+
     </RelativeLayout>
 
     <View
@@ -74,51 +92,154 @@
         android:layout_marginBottom="10dp"/>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:background="@drawable/rounded"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
-
-        <TextView
-            android:id="@+id/bank"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="11dp"
-            android:text="은행업무" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="230dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/rounded">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded1"
+        android:orientation="vertical">
 
 
-        <TextView
-            android:id="@+id/etc"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/pay" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/book" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/profits" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="계좌송금"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="계좌조희"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="계좌분석"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#B9B9B9" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="11dp"
-            android:text="기타업무" />
+            android:layout_marginTop="10dp">
 
-    </RelativeLayout>
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/pay" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/book" />
 
-        android:text="- - - - - developed by HyoRin, A Reum, GaYoung" />
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/profits" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="계좌찾기"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="계좌생성"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+            <TextView
+                android:id="@+id/text33"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="회원등록"
+                android:textAlignment="center"
+                android:textColor="#ABABAB" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
