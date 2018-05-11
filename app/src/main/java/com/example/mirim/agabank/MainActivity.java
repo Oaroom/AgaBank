@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     ImageButton showB;
     ImageButton analyzeB;
 
+    Intent intent = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent intent=new Intent(MainActivity.this,SendMoney.class);
+                intent=new Intent(MainActivity.this,SendMoney.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+        showB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                intent=new Intent(MainActivity.this,showBalance.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+        analyzeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                intent=new Intent(MainActivity.this,analyzeMoney.class);
                 startActivity(intent);
 
 

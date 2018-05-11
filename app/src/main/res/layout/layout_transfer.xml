@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -28,11 +27,10 @@
     </LinearLayout>
 
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="2px"
-        android:background="#ffffff"
-
+        android:background="#ABABAB"
         />
 
 
@@ -52,32 +50,28 @@
 
 
             <TextView
-                android:layout_width="32dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="입금은행" />
 
             <Spinner
 
                 android:id="@+id/bankSpinner"
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="4" />
+                android:entries="@array/bank" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:layout_weight="1"
                 android:text="받는분" />
 
             <EditText
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="30dp"
-                android:layout_weight="4"
                 android:background="@drawable/rounded"
                 android:contentDescription="이름" />
 
@@ -101,8 +95,9 @@
 
 
             <EditText
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="30dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded"
                 android:contentDescription="계좌번호" />
@@ -129,7 +124,8 @@
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginRight="10dp"
-                android:layout_weight="4" />
+                android:layout_weight="4"
+                android:entries="@array/spend"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -153,11 +149,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitB"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="#6997E0"
-        android:textColor="#ffffff"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:text="확인" />
+        android:background="#6997E0"
+        android:text="확인"
+        android:textColor="#ffffff" />
+
 </LinearLayout>

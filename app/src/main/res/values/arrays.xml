@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="bank">
+        <item>은행선택</item>
         <item >우리은행</item>
         <item >제일은행</item>
         <item >하나은행</item>
@@ -14,6 +15,7 @@
 
 
     <string-array name="spend">
+        <item>분류선택</item>
         <item >식비</item>
         <item >간식비</item>
         <item >문구류</item>

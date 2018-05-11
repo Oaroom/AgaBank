@@ -30,7 +30,7 @@
 
     </LinearLayout>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="2px"
         android:background="#ABABAB" />
@@ -57,9 +57,9 @@
             android:id="@+id/isBankbook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/name"
-            android:layout_marginStart="63dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="61dp"
             android:text="님의 최대소비항목은," />
 
         <TextView
@@ -78,8 +78,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/money"
-            android:layout_toEndOf="@+id/money"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/money"
             android:text="입니다." />
 
 

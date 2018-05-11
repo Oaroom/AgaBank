@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".analyzeMoney"/>
+        <activity android:name=".showBalance"/>
+        <activity android:name=".SendMoney"/>
     </application>
 
 </manifest>
