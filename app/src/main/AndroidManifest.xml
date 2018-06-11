@@ -20,6 +20,7 @@
         <activity android:name=".showBalance"/>
         <activity android:name=".SendMoney"/>
         <activity android:name=".FoundAcc"/>
+        <activity android:name=".MakeAcc"/>
     </application>
 
 </manifest>

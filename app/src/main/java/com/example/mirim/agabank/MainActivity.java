@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     ImageButton showB;
     ImageButton analyzeB;
     ImageButton foundB;
+    ImageButton makeB;
+
 
     Intent intent = null;
 
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         showB = (ImageButton) findViewById(R.id.showB);
         analyzeB = (ImageButton) findViewById(R.id.analyzeB);
         foundB = (ImageButton) findViewById(R.id.foundB);
-
+        makeB = (ImageButton) findViewById(R.id.makeB);
 
         sendB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,18 @@ public class MainActivity extends AppCompatActivity {
 
 
                 intent=new Intent(MainActivity.this,FoundAcc.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        makeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                intent=new Intent(MainActivity.this,MakeAcc.class);
                 startActivity(intent);
 
 
