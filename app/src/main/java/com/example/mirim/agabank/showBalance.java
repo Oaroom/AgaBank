@@ -32,6 +32,12 @@ public class showBalance extends AppCompatActivity {
         ListViewAdapter adapter;
 
         adapter = new ListViewAdapter();
+
+
+        adapter.addItem("2018-05-13",6000,"test");
+        adapter.addItem("2018-05-13",8000,"test");
+        adapter.addItem("2018-05-13",9000,"test");
+
         button = (Button) findViewById(R.id.submitB);
         listView = (ListView) findViewById(R.id.content);
         listView.setAdapter(adapter);

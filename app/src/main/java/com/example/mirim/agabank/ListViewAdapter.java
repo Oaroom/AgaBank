@@ -68,17 +68,18 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
 
-    public void addItem(String date,int cash,String type){
+    public void addItem(String date,int cash, String type){
 
 
             ListViewItem item = new ListViewItem();
 
-            item.setDate(date);
-            item.setCash(cash);
-            item.setType(type);
+            item.setDate("2018-05-13");
+            item.setCash(5000);
+            item.setType("간식비");
 
 
             listViewItemList.add(item);
+
 
 
 

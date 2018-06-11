@@ -1,5 +1,7 @@
 package com.example.mirim.agabank;
 
+import android.widget.Toast;
+
 import java.util.Date;
 public class ListViewItem {
 
@@ -38,9 +40,6 @@ public class ListViewItem {
 
 
     }
-
-
-
 
 
 
